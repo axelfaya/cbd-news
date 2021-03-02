@@ -7,7 +7,7 @@
  | for your application. See https://github.com/JeffreyWay/laravel-mix.
  |
  */
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -15,7 +15,7 @@ const mix = require('laravel-mix');
  |--------------------------------------------------------------------------
  */
 mix
-  .setPublicPath(process.env.PROJECT_THEMEPATH + '/build')
+  .setPublicPath(process.env.PROJECT_THEMEPATH + "/build")
   .disableNotifications();
 
 /*
@@ -23,11 +23,11 @@ mix
  | Browsersync
  |--------------------------------------------------------------------------
  */
-mix.browserSync({
-  proxy: process.env.PROJECT_BASE_URL + ':' + process.env.PROJECT_PORT,
-  files: [process.env.PROJECT_THEMEPATH + 'build/**/*.js', process.env.PROJECT_THEMEPATH + 'build/**/*.css'],
-  stream: true,
-});
+//mix.browserSync({
+//  proxy: process.env.PROJECT_BASE_URL + ':' + process.env.PROJECT_PORT,
+//  files: [process.env.PROJECT_THEMEPATH + 'build/**/*.js', process.env.PROJECT_THEMEPATH + 'build/**/*.css'],
+//  stream: true,
+//});
 
 /*
  |--------------------------------------------------------------------------
@@ -35,16 +35,18 @@ mix.browserSync({
  |--------------------------------------------------------------------------
  */
 mix
-  .js(process.env.PROJECT_THEMEPATH + '/assets/js/script.js', 'js')
-  .sass(process.env.PROJECT_THEMEPATH + '/assets/scss/style.scss', 'css')
+  .js(process.env.PROJECT_THEMEPATH + "/assets/js/script.js", "js")
+  .sass(process.env.PROJECT_THEMEPATH + "/assets/scss/style.scss", "css")
   .webpackConfig({
     module: {
-      rules: [{
-        test: /\.scss/,
-        loader: 'import-glob-loader'
-      }]
+      rules: [
+        {
+          test: /\.scss/,
+          loader: "import-glob-loader",
+        },
+      ],
     },
     externals: {
-      "jquery": "jQuery"
-    }
-  })
+      jquery: "jQuery",
+    },
+  });
