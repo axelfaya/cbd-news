@@ -12,7 +12,7 @@ dependencies:
 id: views_block__epingleactu_block_1
 theme: montheme
 region: bottom_right
-weight: -8
+weight: -9
 provider: null
 plugin: 'views_block:epingleactu-block_1'
 settings:

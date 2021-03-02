@@ -11,8 +11,8 @@ dependencies:
     - montheme
 id: whatsapp
 theme: montheme
-region: bottom_right
-weight: -9
+region: bottom_left
+weight: -7
 provider: null
 plugin: 'block_content:6055d115-44d5-4b1b-827d-a19bdf06c14a'
 settings:
