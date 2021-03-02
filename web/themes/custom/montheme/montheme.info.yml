@@ -15,7 +15,11 @@ regions:
   highlighted: Highlight
   help: "Help / Message"
   tools: "Toolbox"
+  top_left: "Top Left"
+  top_right: "Top Right"
   content: "Main content"
+  bottom_left: "Bottom Left"
+  bottom_right: "Bottom Right"
   footer: Footer
   bottom_searchbox: Footer Search Box
 
