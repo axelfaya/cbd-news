@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_image
-    - image.style.thumbnail
+    - image.style.medium
     - node.type.actualite
   module:
     - image
@@ -163,7 +163,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
+          element_class: custom-img-field
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -177,7 +177,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: thumbnail
+            image_style: medium
             image_link: ''
           group_column: ''
           group_columns: {  }

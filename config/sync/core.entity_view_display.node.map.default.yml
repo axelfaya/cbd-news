@@ -28,14 +28,14 @@ content:
     settings:
       include_map: true
       apikey: ''
-      iframe_width: '400'
+      iframe_width: 600px
       iframe_height: '400'
       iframe_title: ''
       static_scale: 1
       link_text: 'View larger map'
-      zoom_level: 14
+      zoom_level: 16
       map_type: m
-      langcode: en
+      langcode: fr
       include_static_map: false
       include_link: false
       include_text: false

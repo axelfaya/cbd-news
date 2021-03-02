@@ -11,8 +11,8 @@ dependencies:
     - montheme
 id: twitter
 theme: montheme
-region: content
-weight: -5
+region: bottom_left
+weight: -8
 provider: null
 plugin: 'block_content:e3d49cd2-04dc-40fd-a675-40730403da11'
 settings:

@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_image
-    - image.style.thumbnail
+    - image.style.medium
     - node.type.actualite
   module:
     - image
@@ -159,13 +159,13 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
+          element_class: custom-img-field
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -173,7 +173,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: thumbnail
+            image_style: medium
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -268,7 +268,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Actualité épinglée'
+      title: 'Actualité à la une'
       header: {  }
       footer: {  }
       empty: {  }
