@@ -1,0 +1,36 @@
+uuid: f51d53ba-6d62-449b-b2f5-e60ef787b84c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.adresse
+    - field.field.block_content.adresse.field_adresses
+id: block_content.adresse.default
+targetEntityType: block_content
+bundle: adresse
+mode: default
+content:
+  field_adresses:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

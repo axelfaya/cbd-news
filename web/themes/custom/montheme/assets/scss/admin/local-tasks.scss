@@ -1,0 +1,15 @@
+.block-local-tasks-block {
+
+  ul {
+    display: flex;
+
+    li {
+      display: block;
+      align-content: flex-end;
+      width: 100%;
+      border: 1px solid;
+      text-align: center;
+      background: #eee;
+    }
+  }
+}

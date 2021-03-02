@@ -1,0 +1,23 @@
+uuid: fe7b5bc0-688c-4594-80a9-0cd06cce8c28
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - montheme
+_core:
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+id: montheme_search
+theme: montheme
+region: bottom_searchbox
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: '0'
+  page_id: node_search
+visibility: {  }

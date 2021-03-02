@@ -1,0 +1,56 @@
+uuid: 3beee081-0e41-4b89-90ea-ac5d1ba0bd8f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.informations.body
+    - field.field.node.informations.field_photos
+    - image.style.large
+    - node.type.informations
+  module:
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      content:
+        - links
+        - body
+        - field_photos
+id: node.informations.default
+targetEntityType: node
+bundle: informations
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_photos:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

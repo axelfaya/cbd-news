@@ -1,0 +1,14 @@
+uuid: 6c5743d0-8cad-4e4a-ade7-29546d7ae8e7
+name: 'CBD News'
+mail: contact@unitysound.ch
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

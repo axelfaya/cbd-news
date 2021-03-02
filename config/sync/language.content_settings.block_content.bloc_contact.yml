@@ -1,0 +1,11 @@
+uuid: ccafcd55-2838-4a86-83c6-51c3ab3a13de
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_contact
+id: block_content.bloc_contact
+target_entity_type_id: block_content
+target_bundle: bloc_contact
+default_langcode: site_default
+language_alterable: false

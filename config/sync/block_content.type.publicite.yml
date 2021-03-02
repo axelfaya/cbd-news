@@ -1,0 +1,8 @@
+uuid: 51038a53-3345-4a9c-9522-38f487926c85
+langcode: fr
+status: true
+dependencies: {  }
+id: publicite
+label: Publicité
+revision: 0
+description: ''

@@ -1,0 +1,99 @@
+<div class="container-fluid p-0 bd-layout custom-page">
+  <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
+    {% block head %}
+      <nav class="navbar custom-navbar py-2 px-2 navbar-expand-md">
+        {{ page.header }}
+        {% if page.main_menu or page.secondary_menu or page.top_searchbox %}
+          <button class="custom-navbar-toggler navbar-toggler navbar-dark navbar-toggler-right"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#CollapsingNavbar"
+                  aria-controls="CollapsingNavbar"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse custom-navbar-menu navbar-collapse justify-content-end" id="CollapsingNavbar">
+            {{ page.main_menu }}
+            {% if page.secondary_menu %}
+                {{ page.secondary_menu }}
+            {% endif %}
+            {% if page.top_searchbox %}
+              <div class="px-2 form-inline navbar-form justify-content-end">
+                {{ page.top_searchbox }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </nav>
+    {% endblock %}
+  </header>
+
+  <article class="custom-main-content container-fluid py-3 px-4">
+
+  {% if page.admin_tools %}
+    <div class="region-admin-tools">
+      {{ page.admin_tools }}
+    </div>
+  {% endif %}
+
+  {% if page.breadcrumb %}
+    <div class="region-breadcrumb">
+      {{ page.breadcrumb }}
+    </div>
+  {% endif %}
+
+  {% if page.highlighted %}
+    <div class="highlighted">
+      <aside class="{{ container }} custom-highlighted section clearfix" role="complementary">
+        {{ page.highlighted }}
+      </aside>
+    </div>
+  {% endif %}
+
+  {% if page.help %}
+    <div class="region-help">
+      <div class="box">
+        {{ page.help }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.tools %}
+    <div class="custom-region-tools">
+      <div class="box">
+        {{ page.tools }}
+      </div>
+    </div>
+  {% endif %}
+
+  <main role="main">
+
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    {% if page.content %}
+      <div class="region-content">
+        {{ page.content }}
+      </div>
+    {% endif %}
+
+  </main>
+
+  </article>
+
+  {% block foot %}
+    <nav class="navbar custom-footer navbar-expand justify-content-between">
+      {% if page.footer or page.bottom_searchbox %}
+        <div class="navbar-collapse container-fluid">
+      {{ page.footer }}
+          {% if page.bottom_searchbox %}
+            <div class="form-inline navbar-form">
+              {{ page.bottom_searchbox }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </nav>
+  {% endblock %}
+
+</div>

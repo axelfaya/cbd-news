@@ -1,0 +1,25 @@
+uuid: 08e61ccb-e020-4a0b-8085-a92862be77a8
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:adresse:39ebec78-b4ec-45bf-b809-bb7523435dd6'
+  module:
+    - block_content
+  theme:
+    - montheme
+id: adresse
+theme: montheme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:39ebec78-b4ec-45bf-b809-bb7523435dd6'
+settings:
+  id: 'block_content:39ebec78-b4ec-45bf-b809-bb7523435dd6'
+  label: Adresse
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

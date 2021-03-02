@@ -1,0 +1,50 @@
+uuid: 63c97952-9762-4705-9f7a-2755f8816353
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.publicite
+    - field.field.block_content.publicite.body
+    - field.field.block_content.publicite.field_image
+    - field.field.block_content.publicite.field_lien
+    - field.field.block_content.publicite.field_titre
+  module:
+    - image
+    - link
+    - text
+id: block_content.publicite.default
+targetEntityType: block_content
+bundle: publicite
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_lien:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  field_titre: true
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: 69c94e81-4ab3-454e-a8b0-da8f5b7d31c9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.adresse
+    - field.field.block_content.adresse.field_adresses
+id: block_content.adresse.default
+targetEntityType: block_content
+bundle: adresse
+mode: default
+content:
+  field_adresses:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

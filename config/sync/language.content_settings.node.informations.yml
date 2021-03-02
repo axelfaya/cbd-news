@@ -1,0 +1,11 @@
+uuid: 2a780d07-4cd3-45ce-ae38-d9ded2d34b0e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.informations
+id: node.informations
+target_entity_type_id: node
+target_bundle: informations
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,23 @@
+uuid: acaf8f90-eb58-4f10-98bc-25ca90efcf4b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.actualite
+  module:
+    - text
+id: node.actualite.body
+field_name: body
+entity_type: node
+bundle: actualite
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

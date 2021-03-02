@@ -1,0 +1,13 @@
+.info-title-full {
+  color: $warning;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-decoration: underline;
+}
+
+.info-image-full {
+  img {
+    border-radius: 0.25rem;
+    margin-top: 2rem;
+  }
+}

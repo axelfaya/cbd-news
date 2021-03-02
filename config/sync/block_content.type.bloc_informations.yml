@@ -1,0 +1,8 @@
+uuid: 12a568b8-f3ee-42cd-863d-ec43d69af29c
+langcode: fr
+status: true
+dependencies: {  }
+id: bloc_informations
+label: 'Bloc Informations'
+revision: 0
+description: ''

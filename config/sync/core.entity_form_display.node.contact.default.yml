@@ -1,0 +1,70 @@
+uuid: b2c8735f-df3f-4f4c-b344-8151fdaae832
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.contact.field_formulaire_de_contact
+    - node.type.contact
+  module:
+    - path
+    - webform
+id: node.contact.default
+targetEntityType: node
+bundle: contact
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_formulaire_de_contact:
+    weight: 3
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  sticky: true

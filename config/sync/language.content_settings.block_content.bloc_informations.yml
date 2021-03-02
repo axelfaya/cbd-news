@@ -1,0 +1,11 @@
+uuid: 26ba8438-f405-49d0-9284-b05dff59829b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_informations
+id: block_content.bloc_informations
+target_entity_type_id: block_content
+target_bundle: bloc_informations
+default_langcode: site_default
+language_alterable: false

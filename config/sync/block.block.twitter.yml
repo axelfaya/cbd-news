@@ -1,0 +1,30 @@
+uuid: 83b3bd07-9b5b-4400-a665-619465e60b69
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:bloc_informations:e3d49cd2-04dc-40fd-a675-40730403da11'
+  module:
+    - block_content
+    - system
+  theme:
+    - montheme
+id: twitter
+theme: montheme
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:e3d49cd2-04dc-40fd-a675-40730403da11'
+settings:
+  id: 'block_content:e3d49cd2-04dc-40fd-a675-40730403da11'
+  label: Twitter
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/5
+    negate: false

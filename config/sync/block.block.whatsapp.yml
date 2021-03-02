@@ -1,0 +1,30 @@
+uuid: 9c14c2c6-1168-45ff-a7e0-630ccbf6abc1
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:bloc_informations:6055d115-44d5-4b1b-827d-a19bdf06c14a'
+  module:
+    - block_content
+    - system
+  theme:
+    - montheme
+id: whatsapp
+theme: montheme
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:6055d115-44d5-4b1b-827d-a19bdf06c14a'
+settings:
+  id: 'block_content:6055d115-44d5-4b1b-827d-a19bdf06c14a'
+  label: Whatsapp
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/5
+    negate: false

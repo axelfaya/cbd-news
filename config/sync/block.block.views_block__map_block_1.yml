@@ -1,0 +1,32 @@
+uuid: 770bf49f-4a2c-45f7-8a12-e14b15e5d9ce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.map
+  module:
+    - node
+    - views
+  theme:
+    - montheme
+id: views_block__map_block_1
+theme: montheme
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:map-block_1'
+settings:
+  id: 'views_block:map-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '1'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      contact: contact
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

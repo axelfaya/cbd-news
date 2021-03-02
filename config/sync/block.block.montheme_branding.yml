@@ -1,0 +1,25 @@
+uuid: 477a63ed-86a6-4727-a2c8-79c640fd3d74
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - montheme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: montheme_branding
+theme: montheme
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

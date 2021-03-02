@@ -1,0 +1,8 @@
+uuid: 88806dc8-00b5-4cf1-babe-c43b16f892b5
+langcode: fr
+status: true
+dependencies: {  }
+id: adresse
+label: Adresse
+revision: 0
+description: ''

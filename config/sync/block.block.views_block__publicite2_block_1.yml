@@ -1,0 +1,29 @@
+uuid: 7f08a6ed-42ed-45e9-bc78-dc96ccb35fc3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.publicite2
+  module:
+    - system
+    - views
+  theme:
+    - montheme
+id: views_block__publicite2_block_1
+theme: montheme
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:publicite2-block_1'
+settings:
+  id: 'views_block:publicite2-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

@@ -1,0 +1,12 @@
+layout-info-full:
+  label: Info (Full Content)
+  category: Custom Layout
+  path: templates/layout
+  template: layout-info-full
+  regions:
+    title:
+      label: Title
+    image:
+      label: Image
+    body:
+      label: Body

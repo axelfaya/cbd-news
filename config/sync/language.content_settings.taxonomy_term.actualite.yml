@@ -1,0 +1,11 @@
+uuid: 372f02e7-92a4-4e74-bd05-189e4b698c55
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.actualite
+id: taxonomy_term.actualite
+target_entity_type_id: taxonomy_term
+target_bundle: actualite
+default_langcode: site_default
+language_alterable: false

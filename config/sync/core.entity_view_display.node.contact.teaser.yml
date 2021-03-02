@@ -1,0 +1,23 @@
+uuid: b52471ab-56a1-4078-b76c-4b7fb8b9eea9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact.field_formulaire_de_contact
+    - node.type.contact
+  module:
+    - user
+id: node.contact.teaser
+targetEntityType: node
+bundle: contact
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_formulaire_de_contact: true
+  langcode: true

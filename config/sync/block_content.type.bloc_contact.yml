@@ -1,0 +1,8 @@
+uuid: d9ce777e-a151-41ea-88f3-c83fe1ad33e2
+langcode: fr
+status: true
+dependencies: {  }
+id: bloc_contact
+label: 'Bloc Contact'
+revision: 0
+description: ''

@@ -1,0 +1,19 @@
+uuid: 0cf4f9cf-5041-4e44-9ba0-170b18ebe108
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.publicite
+    - field.storage.block_content.field_titre
+id: block_content.publicite.field_titre
+field_name: field_titre
+entity_type: block_content
+bundle: publicite
+label: Titre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

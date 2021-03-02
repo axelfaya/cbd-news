@@ -1,0 +1,29 @@
+uuid: 00426b84-07ca-4521-8ed9-b9e6fe15eabc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.epingleactu
+  module:
+    - system
+    - views
+  theme:
+    - montheme
+id: views_block__epingleactu_block_1
+theme: montheme
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:epingleactu-block_1'
+settings:
+  id: 'views_block:epingleactu-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

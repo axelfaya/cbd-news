@@ -1,0 +1,23 @@
+uuid: 27efbbc4-6f9d-47a0-a2b1-e80f74c99d7c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.publicite
+    - field.storage.block_content.field_lien
+  module:
+    - link
+id: block_content.publicite.field_lien
+field_name: field_lien
+entity_type: block_content
+bundle: publicite
+label: Lien
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

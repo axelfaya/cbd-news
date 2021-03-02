@@ -1,0 +1,11 @@
+uuid: 45026f30-f780-4f0b-a343-5b4f93fd98aa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.contact
+id: node.contact
+target_entity_type_id: node
+target_bundle: contact
+default_langcode: site_default
+language_alterable: false

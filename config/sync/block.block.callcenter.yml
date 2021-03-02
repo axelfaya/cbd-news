@@ -1,0 +1,30 @@
+uuid: 2bb686a5-a404-4fd6-b28a-cd40dec0d6ce
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:bloc_contact:0580318c-ac46-4698-9cfc-38faf0bb27f0'
+  module:
+    - block_content
+    - system
+  theme:
+    - montheme
+id: callcenter
+theme: montheme
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:0580318c-ac46-4698-9cfc-38faf0bb27f0'
+settings:
+  id: 'block_content:0580318c-ac46-4698-9cfc-38faf0bb27f0'
+  label: 'Call Center'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/2
+    negate: false

@@ -1,0 +1,8 @@
+uuid: 3d9b4f79-4133-4387-b406-0b5e8f637895
+langcode: fr
+status: true
+dependencies: {  }
+name: Actualité
+vid: actualite
+description: ''
+weight: 0

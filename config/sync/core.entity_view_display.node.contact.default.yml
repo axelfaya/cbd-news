@@ -1,0 +1,46 @@
+uuid: 56a212ae-d59c-43bc-94e3-fe4cf1ed7026
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.contact.field_formulaire_de_contact
+    - node.type.contact
+  module:
+    - ds
+    - user
+    - webform
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      content:
+        - langcode
+        - field_formulaire_de_contact
+id: node.contact.default
+targetEntityType: node
+bundle: contact
+mode: default
+content:
+  field_formulaire_de_contact:
+    weight: 1
+    label: inline
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true
+  links: true
