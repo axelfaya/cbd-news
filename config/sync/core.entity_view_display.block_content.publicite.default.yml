@@ -9,9 +9,34 @@ dependencies:
     - field.field.block_content.publicite.field_lien
     - field.field.block_content.publicite.field_titre
   module:
+    - ds
     - image
     - link
     - text
+third_party_settings:
+  ds:
+    layout:
+      id: layout_twocol
+      library: layout_discovery/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      top:
+        - block_description
+        - field_titre
+      second:
+        - field_image
+      bottom:
+        - body
+        - field_lien
+    fields:
+      block_description:
+        plugin_id: block_description
+        weight: 0
+        label: hidden
+        formatter: hidden
 id: block_content.publicite.default
 targetEntityType: block_content
 bundle: publicite
@@ -20,21 +45,21 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: content
+    region: bottom
   field_image:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
+    region: second
   field_lien:
-    weight: 2
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
@@ -44,7 +69,14 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
+    region: bottom
+  field_titre:
+    type: string
+    weight: 1
+    region: top
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
-  field_titre: true
   langcode: true

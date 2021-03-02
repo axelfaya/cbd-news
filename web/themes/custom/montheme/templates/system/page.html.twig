@@ -67,6 +67,17 @@
     </div>
   {% endif %}
 
+  {% if page.top_left or page.top_right %}
+    <div class="row">
+      <div class="col-md">
+        {{ page.top_left }}
+      </div>
+      <div class="col-md">
+        {{ page.top_right }}
+      </div>
+    </div>
+  {% endif %}
+
   <main role="main">
 
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
@@ -78,6 +89,17 @@
     {% endif %}
 
   </main>
+
+  {% if page.bottom_left or page.bottom_right %}
+    <div class="row">
+      <div class="col-lg">
+        {{ page.bottom_left }}
+      </div>
+      <div class="col-lg">
+        {{ page.bottom_right }}
+      </div>
+    </div>
+  {% endif %}
 
   </article>
 

@@ -112,16 +112,16 @@ display:
             include_map: true
             include_static_map: false
             apikey: ''
-            iframe_width: '400'
+            iframe_width: 100%
             iframe_height: '400'
             iframe_title: ''
             static_scale: 1
             include_link: false
             link_text: 'View larger map'
-            zoom_level: 14
+            zoom_level: 18
             include_text: false
             map_type: m
-            langcode: en
+            langcode: fr
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -175,7 +175,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Map
+      title: 'Google Map'
       header: {  }
       footer: {  }
       empty: {  }

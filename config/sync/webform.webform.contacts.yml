@@ -12,7 +12,7 @@ id: contacts
 title: Contact
 description: ''
 category: ''
-elements: "nom:\n  '#type': webform_name\n  '#title': Nom\n  '#required': true\n  '#title__access': false\n  '#first__title': Prénom\n  '#first__title_display': inline\n  '#first__required': true\n  '#middle__access': false\n  '#last__title': Nom\n  '#last__title_display': inline\n  '#last__required': true\n  '#suffix__access': false\n  '#degree__access': false\n  '#flexbox': '1'\nflexbox:\n  '#type': webform_flexbox\n  email1:\n    '#type': email\n    '#title': Email\n    '#title_display': inline\n    '#required': true\n  telephone:\n    '#type': tel\n    '#title': Téléphone\n    '#title_display': inline\n    '#required': true\n    '#international': true\n    '#international_initial_country': CH"
+elements: "nom:\n  '#type': webform_name\n  '#title': Nom\n  '#required': true\n  '#title__access': false\n  '#first__title': Prénom\n  '#first__title_display': inline\n  '#first__required': true\n  '#middle__access': false\n  '#last__title': Nom\n  '#last__title_display': inline\n  '#last__required': true\n  '#suffix__access': false\n  '#degree__access': false\n  '#flexbox': '1'\nflexbox:\n  '#type': webform_flexbox\n  email1:\n    '#type': email\n    '#title': Email\n    '#title_display': inline\n    '#required': true\n  telephone:\n    '#type': tel\n    '#title': Téléphone\n    '#title_display': inline\n    '#required': true\n    '#international': true\n    '#international_initial_country': CH\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#required': true"
 css: ''
 javascript: ''
 settings:

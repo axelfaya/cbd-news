@@ -11,8 +11,8 @@ dependencies:
     - montheme
 id: callcenter
 theme: montheme
-region: content
-weight: -10
+region: bottom_right
+weight: -7
 provider: null
 plugin: 'block_content:0580318c-ac46-4698-9cfc-38faf0bb27f0'
 settings:

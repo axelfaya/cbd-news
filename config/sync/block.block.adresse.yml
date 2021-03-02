@@ -11,7 +11,7 @@ dependencies:
 id: adresse
 theme: montheme
 region: footer
-weight: 0
+weight: -9
 provider: null
 plugin: 'block_content:39ebec78-b4ec-45bf-b809-bb7523435dd6'
 settings:
