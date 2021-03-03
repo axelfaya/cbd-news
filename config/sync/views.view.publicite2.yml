@@ -320,8 +320,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: d-block
+          element_type: div
+          element_class: custom-promo-img-field
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
