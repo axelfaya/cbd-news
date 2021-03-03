@@ -17,16 +17,9 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        classes: {  }
-        wrappers:
-          content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
+        label: ''
     regions:
       content:
-        - langcode
         - field_formulaire_de_contact
 id: node.contact.default
 targetEntityType: node
@@ -34,13 +27,13 @@ bundle: contact
 mode: default
 content:
   field_formulaire_de_contact:
-    weight: 1
-    label: inline
+    type: webform_entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
     settings:
       source_entity: true
     third_party_settings: {  }
-    type: webform_entity_reference_entity_view
-    region: content
 hidden:
   langcode: true
   links: true

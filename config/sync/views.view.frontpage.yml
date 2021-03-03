@@ -234,35 +234,18 @@ display:
           separator: ''
           hide_empty: false
       sorts:
-        sticky:
-          admin_label: ''
-          expose:
-            label: ''
-          exposed: false
-          field: sticky
-          group_type: group
-          id: sticky
-          order: DESC
-          relationship: none
-          table: node_field_data
-          plugin_id: boolean
-          entity_type: node
-          entity_field: sticky
-        created:
-          field: created
-          id: created
-          order: DESC
-          table: node_field_data
-          plugin_id: date
+        random:
+          id: random
+          table: views
+          field: random
           relationship: none
           group_type: group
           admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
-          granularity: second
-          entity_type: node
-          entity_field: created
+          plugin_id: random
       style:
         type: default
         options:
@@ -270,7 +253,7 @@ display:
           row_class: ''
           default_row_class: true
           uses_fields: false
-      title: 'Dernières actualités'
+      title: 'Bienvenue sur CBD News'
       header: {  }
       footer: {  }
       relationships: {  }
@@ -455,7 +438,7 @@ display:
           type: image
           settings:
             image_style: medium
-            image_link: ''
+            image_link: content
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -479,7 +462,7 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
+      max-age: 0
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_image'
@@ -687,7 +670,7 @@ display:
       defaults:
         fields: false
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -731,7 +714,7 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
+      max-age: 0
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_image'
@@ -750,7 +733,7 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
+      max-age: 0
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_image'
