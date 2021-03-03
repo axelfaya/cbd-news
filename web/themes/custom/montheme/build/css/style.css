@@ -6472,6 +6472,27 @@ progress {
   background: #f8f9fa;
 }
 
+.custom-promo-img-field {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.custom-sticky-img-field {
+  text-align: center;
+  overflow: hidden;
+}
+.custom-sticky-img-field img {
+  transition: transform 0.5s ease;
+  border-radius: 0.5rem;
+}
+.custom-sticky-img-field img:hover {
+  transform: scale(1.5);
+}
+
+.custom-sticky-txt-field {
+  text-align: center;
+}
+
 .custom-img-field {
   height: 100px;
   width: 100px;
@@ -6550,6 +6571,7 @@ progress {
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 1000;
 }
 .custom-footer a {
   color: #f8f9fa;
@@ -6562,16 +6584,14 @@ progress {
   right: 1rem;
 }
 
-.info-title-full {
-  color: #ffc107;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  text-decoration: underline;
-}
-
 .info-image-full img {
   border-radius: 0.25rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.info-body-full {
+  padding-left: 1rem;
 }
 
 .block-local-tasks-block ul {

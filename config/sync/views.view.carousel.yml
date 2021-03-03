@@ -1,19 +1,18 @@
-uuid: 1c280029-064f-44b8-808c-0e273a1b8797
+uuid: 6936e881-f2ac-4883-a02c-24562f8cab65
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - field.storage.node.field_image
-    - image.style.medium
-    - node.type.actualite
+    - field.storage.node.field_sli
+    - image.style.flexslider_full
+    - node.type.carousel
   module:
+    - flexslider_views
     - image
     - node
-    - text
     - user
-id: epingleactu
-label: EpingléActu
+id: carousel
+label: Carousel
 module: views
 description: ''
 tag: ''
@@ -44,9 +43,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Appliquer
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Réinitialiser
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -54,22 +53,23 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 1
+          items_per_page: 3
           offset: 0
       style:
-        type: default
+        type: flexslider
+        options:
+          grouping: {  }
+          flexslider: null
+          optionset: default
+          captionfield: ''
+          id: ''
       row:
         type: fields
-        options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
       fields:
-        field_image:
-          id: field_image
-          table: node__field_image
-          field: field_image
+        field_sli:
+          id: field_sli
+          table: node__field_sli
+          field: field_sli
           relationship: none
           group_type: group
           admin_label: ''
@@ -102,8 +102,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
-          element_class: custom-sticky-img-field
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -117,72 +117,9 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: medium
-            image_link: content
+            image_style: flexslider_full
+            image_link: ''
           group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        body:
-          id: body
-          table: node__body
-          field: body
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: custom-sticky-txt-field
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_trimmed
-          settings:
-            trim_length: 60
-          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -212,53 +149,13 @@ display:
           table: node_field_data
           field: type
           value:
-            actualite: actualite
+            carousel: carousel
           entity_type: node
           entity_field: type
           plugin_id: bundle
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        sticky:
-          id: sticky
-          table: node_field_data
-          field: sticky
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: sticky
-          plugin_id: boolean
       sorts:
         created:
           id: created
@@ -275,7 +172,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Actualité à la une'
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }
@@ -290,8 +187,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_sli'
   block_1:
     display_plugin: block
     id: block_1
@@ -307,5 +203,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_sli'
