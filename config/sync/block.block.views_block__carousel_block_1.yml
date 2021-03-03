@@ -1,0 +1,29 @@
+uuid: eaa3ea92-df2f-4629-a15e-ea4b4ee4a1d4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.carousel
+  module:
+    - system
+    - views
+  theme:
+    - montheme
+id: views_block__carousel_block_1
+theme: montheme
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:carousel-block_1'
+settings:
+  id: 'views_block:carousel-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

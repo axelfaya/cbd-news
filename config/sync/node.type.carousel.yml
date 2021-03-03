@@ -1,0 +1,18 @@
+uuid: 19ef1673-5ab2-4d50-99d6-8039e1d7d299
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Carousel
+type: carousel
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

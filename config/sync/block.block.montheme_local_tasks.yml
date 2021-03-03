@@ -9,7 +9,7 @@ _core:
 id: montheme_local_tasks
 theme: montheme
 region: content
-weight: -9
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:
