@@ -7,13 +7,11 @@ url:
     fr: fr
     de: de
     zh-hans: zh-hans
-    it: it
   domains:
     en: ''
     fr: ''
     de: ''
     zh-hans: ''
-    it: ''
 selected_langcode: site_default
 _core:
   default_config_hash: uEePITI9tV6WqzmsTb7MfPCi5yPWXSxAN1xeLcYFQbM

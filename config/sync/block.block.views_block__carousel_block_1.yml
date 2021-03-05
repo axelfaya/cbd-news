@@ -1,4 +1,4 @@
-uuid: 2eaf5010-544c-46c1-a984-7c94a7a64dc4
+uuid: eaa3ea92-df2f-4629-a15e-ea4b4ee4a1d4
 langcode: fr
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: views_block__carousel_block_1
 theme: montheme
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: 'views_block:carousel-block_1'
 settings:

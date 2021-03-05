@@ -1,0 +1,33 @@
+uuid: ad8ead04-34e2-43df-92af-da348fef3c72
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nouvelle_page.body
+    - field.field.node.nouvelle_page.field_imagetest
+    - node.type.nouvelle_page
+  module:
+    - text
+    - user
+id: node.nouvelle_page.teaser
+targetEntityType: node
+bundle: nouvelle_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_imagetest: true
+  langcode: true

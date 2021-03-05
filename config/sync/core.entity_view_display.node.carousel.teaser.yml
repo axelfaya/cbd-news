@@ -1,23 +1,33 @@
-uuid: 58cd95fc-f487-4b9b-aee3-b5bc4751d05f
+uuid: e5438a09-57e8-40aa-8808-287d82891514
 langcode: fr
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.carousel.field_sli
+    - field.field.node.carousel.body
+    - field.field.node.carousel.field_slider_image
     - node.type.carousel
   module:
+    - text
     - user
 id: node.carousel.teaser
 targetEntityType: node
 bundle: carousel
 mode: teaser
 content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
-  field_sli: true
+  field_slider_image: true
   langcode: true

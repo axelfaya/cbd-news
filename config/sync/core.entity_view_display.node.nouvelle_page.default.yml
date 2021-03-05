@@ -1,0 +1,69 @@
+uuid: 0bdff079-7af9-40ac-a95f-f6469d8b8fa1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.nouvelle_page.body
+    - field.field.node.nouvelle_page.field_imagetest
+    - image.style.large
+    - node.type.nouvelle_page
+  module:
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_twocol
+      library: layout_discovery/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      top:
+        - links
+      first:
+        - body
+        - langcode
+      second:
+        - field_imagetest
+id: node.nouvelle_page.default
+targetEntityType: node
+bundle: nouvelle_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: first
+  field_imagetest:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: image
+    region: second
+  langcode:
+    type: language
+    weight: 2
+    region: first
+    label: hidden
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: top
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

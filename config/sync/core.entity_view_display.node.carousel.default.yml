@@ -1,27 +1,40 @@
-uuid: 34c02d18-e3a3-46cc-b9e6-514506ef03d5
+uuid: 7cd512bd-b66d-4cc8-911b-05743279a8e8
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.carousel.field_sli
+    - field.field.node.carousel.body
+    - field.field.node.carousel.field_slider_image
     - node.type.carousel
   module:
     - image
+    - text
     - user
 id: node.carousel.default
 targetEntityType: node
 bundle: carousel
 mode: default
 content:
-  field_sli:
-    weight: 0
+  body:
     label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_slider_image:
+    weight: 102
+    label: above
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   langcode: true
-  links: true

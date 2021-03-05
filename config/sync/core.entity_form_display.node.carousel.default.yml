@@ -1,26 +1,38 @@
-uuid: 79bc07bd-905f-4cf7-8cdc-354946e05f2b
+uuid: 243cf151-3bf1-4cf4-a1ea-7d2ba7d0c9c5
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.carousel.field_sli
+    - field.field.node.carousel.body
+    - field.field.node.carousel.field_slider_image
     - image.style.thumbnail
     - node.type.carousel
   module:
     - image
     - path
+    - text
 id: node.carousel.default
 targetEntityType: node
 bundle: carousel
 mode: default
 content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_sli:
+  field_slider_image:
     weight: 122
     settings:
       progress_indicator: throbber

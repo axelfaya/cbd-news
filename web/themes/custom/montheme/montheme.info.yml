@@ -14,6 +14,7 @@ regions:
   breadcrumb: Breadcrumbs
   highlighted: Highlight
   help: "Help / Message"
+  simon: "Simon"
   tools: "Toolbox"
   top_left: "Top Left"
   top_right: "Top Right"
