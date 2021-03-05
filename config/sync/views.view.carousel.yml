@@ -1,9 +1,9 @@
-uuid: 6936e881-f2ac-4883-a02c-24562f8cab65
+uuid: e745ba96-67bf-41c7-99cc-7242050350e7
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_sli
+    - field.storage.node.field_slider_image
     - image.style.flexslider_full
     - node.type.carousel
   module:
@@ -57,19 +57,18 @@ display:
           offset: 0
       style:
         type: flexslider
-        options:
-          grouping: {  }
-          flexslider: null
-          optionset: default
-          captionfield: ''
-          id: ''
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
-        field_sli:
-          id: field_sli
-          table: node__field_sli
-          field: field_sli
+        field_slider_image:
+          id: field_slider_image
+          table: node__field_slider_image
+          field: field_slider_image
           relationship: none
           group_type: group
           admin_label: ''
@@ -187,7 +186,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_sli'
+        - 'config:field.storage.node.field_slider_image'
   block_1:
     display_plugin: block
     id: block_1
@@ -203,4 +202,21 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_sli'
+        - 'config:field.storage.node.field_slider_image'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: carousel
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_slider_image'

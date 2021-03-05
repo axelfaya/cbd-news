@@ -30,6 +30,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/captcha": "^1.1",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
@@ -39,9 +40,11 @@
         "drupal/fontawesome_menu_icons": "^1.9",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
+        "drupal/svg_image": "^1.14",
         "drupal/twig_tweak": "^3.0",
         "drupal/views_bootstrap": "^4.3",
         "drupal/webform": "^6.0",
+        "wikimedia/composer-merge-plugin": "^2.0",
         "woocommerce/flexslider": "~2.0"
     },
     "conflict": {
@@ -106,6 +109,11 @@
                 "      https://www.drupal.org/getting-involved",
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
+            ]
+        },
+        "merge-plugin": {
+            "include": [
+                "web/modules/contrib/webform/composer.libraries.json"
             ]
         }
     },

@@ -1,0 +1,7 @@
+uuid: a3a3e489-91c5-43c5-8b90-e42aaf81ae62
+langcode: fr
+status: false
+dependencies: {  }
+formId: node_carousel_form
+captchaType: default
+label: null

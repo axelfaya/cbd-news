@@ -1,0 +1,19 @@
+menu_link_icons:
+  standard_front_page:
+    icon: fa-home
+    prefix: fas
+    tag: i
+    appearance: before
+  user_page:
+    icon: fa-user
+    prefix: fas
+    tag: i
+    appearance: before
+  user_logout:
+    icon: fa-sign-in-alt
+    prefix: fas
+    tag: i
+    appearance: before
+_core:
+  default_config_hash: 5TDl2QyTY-mHHJ0_VrmcxVDwhp4oqkLTzDI03yXvhAI
+langcode: fr

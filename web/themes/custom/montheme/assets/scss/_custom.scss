@@ -1,13 +1,16 @@
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
+
 ::-webkit-scrollbar-track {
   background: $custom-background;
 }
+
 ::-webkit-scrollbar-thumb {
   background: $gray-800;
   border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: $gray-800;
 }
